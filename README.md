@@ -6,10 +6,10 @@ We followed core concepts of object oriented model of programming to make sure e
 
 An example of code to implement interface is shown below:
 
-public	class	DemoClass	extends	FragmentActivity implements GestureDetectionInterface  {
+public class DemoClass extends FragmentActivity implements GestureDetectionInterface  {
 
      @Override
-     protected	void	onCreate ( Bundle savedInstanceState )  {
+     protected void onCreate ( Bundle savedInstanceState )  {
 
      super.onCreate ( savedInstanceState );
 
