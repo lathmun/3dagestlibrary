@@ -8,11 +8,6 @@ An example of code to implement interface is shown below:
 
 
 ```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-
 
 public class DemoClass extends FragmentActivity implements GestureDetectionInterface  {
      
@@ -27,6 +22,7 @@ public class DemoClass extends FragmentActivity implements GestureDetectionInter
 }
 
 
+```
 
 Your class must show error to implement three methods listed below in bullets. This class is to send messages from our library to the application which is using it. Methods that must be implemented are listed below with their description.
 
