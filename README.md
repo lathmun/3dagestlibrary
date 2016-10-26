@@ -57,17 +57,17 @@ GestureDetectionInterface {
 
 	}
 
-	@O ve r ri d e
+	@Override
 	public void registrationError (String  s )  {
 
 	}
 
-	@O v er r id e
+	@Override
 	public void GestureType( String  s )  {
 
 	}
 
-	@O v er r id e
+	@Override
 	public void continuosValues( String  s, double [] doubles , double [] doubles1 )  {
 
 	}
@@ -77,10 +77,11 @@ GestureDetectionInterface {
 
 Once you implement interface you have to pass your application context to our gesture detection class to start the application process. You can start receiving gesture recognition anytime by sending application context to the constructor of DetectGestures class available in the library. You can do this by just invoking the constructor from Main Activity class of your application. Code for invocation is show below.
 
-1	Context  _context  =   g e t A p p l i c a t i o n C o n t e x t ();
+	```javascript
+	Context  _context = getApplicationContext();
 
-2	D e t e c t G e s t u r e s  _objDG  =  new  D e t e c t G e s t u r e s ( this , _context );
-
+	DetectGestures  _objDG  =  new  DetectGestures( this , _context );
+	```
 
 
 
