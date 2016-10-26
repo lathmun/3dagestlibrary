@@ -44,39 +44,34 @@ dimensional values of phone position at which gesture was detected and second do
 The code below shows an example of the class code after implementing the above methods:
 
 ```javascript
-public	class	DemoClass	extends	FragmentActivity implements
+public class DemoClass extends FragmentActivity implements
 
-GestureDetectionInterface  {
+GestureDetectionInterface {
 
-	  @Override
+	@Override
+	protected void onCreate (Bundle savedInstanceState)  {
 
-4	pr ot e ct e d	void	onCreate ( Bundle	s a v e d I n s t a n c e S t a t e )  {
+	super.onCreate( savedInstanceState );
 
-5	super . onCreate ( s a v e d I n s t a n c e S t a t e );
+	setContentView(R.layout.SomeLayout);
 
-6	s e t C o n t e n t V i e w ( R . layout . S o m e L a y o u t );
+	}
 
-7	}
+	@O ve r ri d e
+	public void registrationError (String  s )  {
 
-8	@O ve r ri d e
+	}
 
-9	public  void  r e g i s t r a t i o n E r r o r ( String  s )  {
+	@O v er r id e
+	public void GestureType( String  s )  {
 
-10	}
+	}
 
-11	@O v er r id e
+	@O v er r id e
+	public void continuosValues( String  s, double [] doubles , double [] doubles1 )  {
 
-12	public  void  G e s t u r e T y p e ( String  s )  {
-
-13	}
-
-14	@O v er r id e
-
-15	public	void	c o n t i n u o s V a l u e s ( String  s ,  double []  doubles ,  double []	doubles1 )  {
-
-16	}
-
-17	}
+	}
+}
 
 ```
 
