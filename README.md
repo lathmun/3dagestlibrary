@@ -1,31 +1,23 @@
 # 3dagestlibrary
 
-Chapter 3	29
-
-3.4	The Accelerometer-Based Gestures Library
-
-
-In this section, we explain how our implementation works and communicates with developer or anyone who is using our library. In this section we will briefly explain how to use library in an eﬃcient and eﬀective way.
+In this file, we explain how our implementation works and communicates with developer or anyone who is using our library. In this section we will briefly explain how to use library in an eﬃcient and eﬀective way.
 
 We followed core concepts of object oriented model of programming to make sure everyone who knows basics of programming can easily access and use our library. We exposed our implementation through interface class named as GestureDetectionInterface with some methods that must be implemented while using library.
 
 An example of code to implement interface is shown below:
 
-1  public	class	De mo C la s s	extends	F r a g m e n t A c t i v i t y	i m p l e m e n t s
+public	class	DemoClass	extends	FragmentActivity implements GestureDetectionInterface  {
 
-2	G e s t u r e D e t e c t i o n I n t e r f a c e  {
+     @Override
+     protected	void	onCreate ( Bundle savedInstanceState )  {
 
-3	@O v er r id e
+     super.onCreate ( savedInstanceState );
 
-4	pr ot e ct e d	void	onCreate ( Bundle	s a v e d I n s t a n c e S t a t e )  {
+     setContentView (R.layout.SomeLayout);
 
-5	super . onCreate ( s a v e d I n s t a n c e S t a t e );
+     }
 
-6	s e t C o n t e n t V i e w ( R . layout . S o m e L a y o u t );
-
-7	}
-
-8	}
+}
 
 
 
@@ -49,11 +41,11 @@ dimensional values of phone position at which gesture was detected and second do
 
 The code below shows an example of the class code after implementing the above methods:
 
-1  public	class	De mo C la s s	extends	F r a g m e n t A c t i v i t y	i m p l e m e n t s
+public	class	DemoClass	extends	FragmentActivity implements
 
-2	G e s t u r e D e t e c t i o n I n t e r f a c e  {
+GestureDetectionInterface  {
 
-3	@O ve r ri d e
+	  @Override
 
 4	pr ot e ct e d	void	onCreate ( Bundle	s a v e d I n s t a n c e S t a t e )  {
 
