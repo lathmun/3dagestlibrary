@@ -77,13 +77,13 @@ GestureDetectionInterface {
 
 Once you implement interface you have to pass your application context to our gesture detection class to start the application process. You can start receiving gesture recognition anytime by sending application context to the constructor of DetectGestures class available in the library. You can do this by just invoking the constructor from Main Activity class of your application. Code for invocation is show below.
 
-	```javascript
+	
 	
 	Context  _context = getApplicationContext();
 
 	DetectGestures  _objDG  =  new  DetectGestures( this , _context );
 	
-	```
+	
 
 
 
