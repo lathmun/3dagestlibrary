@@ -26,7 +26,7 @@ public class DemoClass extends FragmentActivity implements GestureDetectionInter
 
 Your class must show error to implement three methods listed below in bullets. This class is to send messages from our library to the application which is using it. Methods that must be implemented are listed below with their description.
 
-*	public void registrationError(String)
+*	**public void registrationError(String)**
 
 This methods is invoked if there is any problem in the beginning phase of registering library with your application. In case of any error this method is invoked and sends a Java string class object with details. Users can follow the error and retry after fixing the issue.
 
