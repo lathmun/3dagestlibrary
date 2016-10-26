@@ -30,20 +30,20 @@ Your class must show error to implement three methods listed below in bullets. T
 
 This methods is invoked if there is any problem in the beginning phase of registering library with your application. In case of any error this method is invoked and sends a Java string class object with details. Users can follow the error and retry after fixing the issue.
 
-*	public void GestureType(String)
+*	**public void GestureType(String)**
 
 Once you have successfully bounded library with your application and it start working this method is invoked every time a gesture is recognized. GestureType method sends a Java String class object with type of gesture recognized. Your application can use Global.Gestures. type of string to match the gesture type.
 
-*	public void continuosValues(String, double [ ], double [ ])
+*	**public void continuosValues(String, double [ ], double [ ])**
 
 continuosValues method has two parameters which carries two Java double type ar-rays. This method is invoked in only two cases. One when application has already detected Extreme Zoom gesture and second is Drag gesture. First parameter carries 3
  
-Chapter 3	30
 
 dimensional values of phone position at which gesture was detected and second double type array contains 3 dimensional values for current position of phone. This way you can track position of phone and perform actions accordingly to your application.
 
 The code below shows an example of the class code after implementing the above methods:
 
+```javascript
 public	class	DemoClass	extends	FragmentActivity implements
 
 GestureDetectionInterface  {
@@ -78,7 +78,7 @@ GestureDetectionInterface  {
 
 17	}
 
-
+```
 
 Once you implement interface you have to pass your application context to our gesture detection class to start the application process. You can start receiving gesture recognition anytime by sending application context to the constructor of DetectGestures class available in the library. You can do this by just invoking the constructor from Main Activity class of your application. Code for invocation is show below.
 
