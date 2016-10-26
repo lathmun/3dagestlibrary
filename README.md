@@ -5,7 +5,7 @@ In this file, we explain how our implementation works and communicates with deve
 We followed core concepts of object oriented model of programming to make sure everyone who knows basics of programming can easily access and use our library. We exposed our implementation through interface class named as GestureDetectionInterface with some methods that must be implemented while using library.
 
 An example of code to implement interface is shown below:
-
+'''java
 public class DemoClass extends FragmentActivity implements GestureDetectionInterface  {
 
      @Override
@@ -18,7 +18,7 @@ public class DemoClass extends FragmentActivity implements GestureDetectionInter
      }
 
 }
-
+'''
 
 
 Your class must show error to implement three methods listed below in bullets. This class is to send messages from our library to the application which is using it. Methods that must be implemented are listed below with their description.
