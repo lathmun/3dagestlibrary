@@ -131,54 +131,53 @@ GestureDetectionInterface {
  
 Third class is global class which is used for maintaining the communication standards be-tween library and application. We have defined standard communication model for better understanding and to avoid complications. You can access them anytime withing your appli-cation by accessing Global class without making any intent. Messages are divided in three diﬀerent categories. First category ca be accessed by typing Global. and then any of name listed in the first category. Below are the standard messages of category 1 which can be used anytime depending on their data types .
 
-•	int X = 0
+*	int X = 0
 
-•	int Y = 1
+*	int Y = 1
 
-•	int Z = 2
+*	int Z = 2
 
-•	int X_AXIS = 0
+*	int X_AXIS = 0
 
-•	int Y_AXIS = 1
+*	int Y_AXIS = 1
 
-•	int Z_AXIS = 2
+*	int Z_AXIS = 2
 
-•	String WAIT_MESSAGE = "Wait"
+*	String WAIT_MESSAGE = "Wait"
 
 
 Second category is based on error messages which can be accessed by using Global.Errors. and name of variable listed below
 
-• String ERROR_REGISTRATION = "Sensor Manager Registration Error"
- 
-Chapter 3	32
+* String ERROR_REGISTRATION = "Sensor Manager Registration Error"
+
 
 Third category is for Gesture messages and very important one. It can be accessed by using Global.Gestures. and then name of any gesture listed below.
 
-•	String TAP = "Tap"
+*	String TAP = "Tap"
 
-•	String PRESS = "Press"
+*	String PRESS = "Press"
 
-•	String ZOOM_IN = "ZoomIn"
+*	String ZOOM_IN = "ZoomIn"
 
-•	String ZOOM_OUT = "ZoomOut"
+*	String ZOOM_OUT = "ZoomOut"
 
-•	String LEFT_DRAG = "LeftDrag"
+*	String LEFT_DRAG = "LeftDrag"
 
-•	String RIGHT_DRAG = "RightDrag"
+*	String RIGHT_DRAG = "RightDrag"
 
-•	String DOUBLE_TAP = "DoubleTap"
+*	String DOUBLE_TAP = "DoubleTap"
 
-•	String LONG_PRESS = "LongPress"
+*	String LONG_PRESS = "LongPress"
 
-•	String EXTREME_ZOOM = "ExtremeZoom"
+*	String EXTREME_ZOOM = "ExtremeZoom"
 
-•	String ROTATION_ANTI= "RotationAnti"
+*	String ROTATION_ANTI= "RotationAnti"
 
-•	String EXTREME_ZOOM_IN = "ExtremeZoomIn"
+*	String EXTREME_ZOOM_IN = "ExtremeZoomIn"
 
-•	String EXTREME_ZOOM_OUT = "ExtremeZoomOut"
+*	String EXTREME_ZOOM_OUT = "ExtremeZoomOut"
 
-•	String ROTATION_CLOCKWISE= "RotationClockwise"
+*	String ROTATION_CLOCKWISE= "RotationClockwise"
 
 
 Once you follow all the above mentioned steps your application will start receiving message from our library and you can respond the way your want.
